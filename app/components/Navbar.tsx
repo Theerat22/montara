@@ -33,29 +33,29 @@ const Navbar: React.FC = () => {
                       หน้าหลัก
                   </Link>
                   <Link
-                    href="#about" scroll={false}
+                    href="#rooms" scroll={false}
                     onClick={() => scrollToSection("about")}
                     className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
-                      About
+                      บ้านพัก
                   </Link>
-                  <Link href="#work" scroll={false}
+                  <Link href="#activities" scroll={false}
                       onClick={() => scrollToSection("work")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
-                      Projects
+                      กิจกรรม
                   </Link>
                   <Link href="#services" scroll={false}
                       onClick={() => scrollToSection("services")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
-                      Services
+                      สถานที่ใกล้เคียง
                   </Link>
                   <Link href="#contact" scroll={false}
                       onClick={() => scrollToSection("contact")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
-                      Contact
+                      การติดต่อ
                   </Link>
                 </div>
               </div>
