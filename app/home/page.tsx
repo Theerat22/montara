@@ -3,13 +3,21 @@
 import Navbar from "@/app/components/Navbar";
 import {Welcome} from "./sections/welcome/index";
 import { Rooms } from "./sections/room/index";
+import { Activities } from "./sections/activities/index";
 const Home: React.FC = () => {
 
     return (
         <>
-        <Navbar />
+        <Navbar 
+            home="#welcome"
+            rooms="#rooms"
+            activity="#activity"
+            services="#services"
+            contact="#contact"
+        />
         <main>
             <Welcome />
+            <Activities />
             <Rooms />
         </main>
         </>

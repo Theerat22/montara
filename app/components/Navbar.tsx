@@ -2,8 +2,15 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
+interface PathNav {
+  home: string;
+  rooms: string;
+  activity: string;
+  services: string;
+  contact: string;
+}
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<PathNav> = ({home, rooms, activity, services, contact}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -31,32 +38,32 @@ const Navbar: React.FC = () => {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link href="#welcome" scroll={true}
+                  <Link href={home} scroll={true}
                       onClick={() => scrollToSection("#welcome")}
                       className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
                     >
                       หน้าหลัก
                   </Link>
                   <Link
-                    href="#rooms" scroll={true}
+                    href={rooms} scroll={true}
                     onClick={() => scrollToSection("#rooms")}
                     className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
                       บ้านพัก
                   </Link>
-                  <Link href="#activities" scroll={true}
+                  <Link href={activity} scroll={true}
                       onClick={() => scrollToSection("work")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
                       กิจกรรม
                   </Link>
-                  <Link href="#services" scroll={true}
+                  <Link href={services}scroll={true}
                       onClick={() => scrollToSection("services")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
                       สถานที่ใกล้เคียง
                   </Link>
-                  <Link href="#contact" scroll={false}
+                  <Link href={contact} scroll={false}
                       onClick={() => scrollToSection("contact")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
