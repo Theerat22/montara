@@ -26,26 +26,26 @@ const Navbar: React.FC = () => {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link href="#welcome" scroll={false}
-                      onClick={() => scrollToSection("home")}
+                  <Link href="#welcome" scroll={true}
+                      onClick={() => scrollToSection("#welcome")}
                       className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
                     >
                       หน้าหลัก
                   </Link>
                   <Link
-                    href="#rooms" scroll={false}
-                    onClick={() => scrollToSection("about")}
+                    href="#rooms" scroll={true}
+                    onClick={() => scrollToSection("#rooms")}
                     className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
                       บ้านพัก
                   </Link>
-                  <Link href="#activities" scroll={false}
+                  <Link href="#activities" scroll={true}
                       onClick={() => scrollToSection("work")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >
                       กิจกรรม
                   </Link>
-                  <Link href="#services" scroll={false}
+                  <Link href="#services" scroll={true}
                       onClick={() => scrollToSection("services")}
                       className="cursor-pointer text-black font-semibold px-3 py-2 text-md hover:font-black"
                     >

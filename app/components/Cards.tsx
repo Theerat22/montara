@@ -5,9 +5,9 @@ interface ProfileCardProps {
     price: string;
     total: string;
     imageUrl: StaticImageData;
-    path: string;
+    slug: string;
   }
-const ProfileCard: React.FC<ProfileCardProps> = ({ name, price, total, imageUrl,path}) => {
+const ProfileCard: React.FC<ProfileCardProps> = ({ name, price, total, imageUrl,slug}) => {
     return (
       <div className="min-w-sm bg-white rounded-lg shadow-xl p-6 text-center">
         {/* Profile Image */}
@@ -26,7 +26,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, price, total, imageUrl,
         <p className="text-gray-500">ราคา {price}</p>
         
 
-        <Link  href={`/home/rooms/${path}`}>
+        <Link  href={`/rooms/${slug}`}>
           <button className="bg-blue-600 text-white py-1 px-5 mt-3 font-bold rounded-full hover:bg-indigo-700">
             ดู
           </button>

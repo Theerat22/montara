@@ -4,6 +4,7 @@ import Link from "next/link";
 import welcome1 from "@/app/home/sections/welcome/welcome1.jpg";
 import welcome2 from "@/app/home/sections/welcome/welcome2.jpg";
 import welcome3 from "@/app/home/sections/welcome/welcome3.jpg";
+
 export const Welcome = () => {
   return (
     <>
@@ -15,7 +16,7 @@ export const Welcome = () => {
         <p className="text-gray-500 mb-8">
         บ้านไม้ในป่าสักท่ามกลางธรรมชาติ สเต็ก อาหาร เครื่องดื่ม เเละ กาเเฟสด Free Wifi รถ ATV
         </p>
-        <Link href="#room">
+        <Link href="#rooms">
           <button className="bg-indigo-600 text-white py-3 px-8 rounded-full hover:bg-indigo-700">
             ดูบ้านพัก
           </button>

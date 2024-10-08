@@ -2,7 +2,7 @@
 // import Head from "next/head";
 import Navbar from "@/app/components/Navbar";
 import {Welcome} from "./sections/welcome/index";
-
+import { Rooms } from "./sections/room/index";
 const Home: React.FC = () => {
 
     return (
@@ -10,6 +10,7 @@ const Home: React.FC = () => {
         <Navbar />
         <main>
             <Welcome />
+            <Rooms />
         </main>
         </>
     );
