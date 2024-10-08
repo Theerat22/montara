@@ -1,16 +1,16 @@
-// @/app/rooms/[slug].tsx
-import { useRouter } from 'next/router';
+// app/rooms/[slug]/page.tsx
+import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import welcome1 from '@/app/home/sections/welcome/welcome1.jpg'; // Sample image for now
 
 const roomData = {
-  tara: {
+  room1: {
     name: 'บ้านธาราภิรมย์',
     price: '4,500฿ /คืน',
     total: '6',
     image: welcome1,
   },
-  chomdao: {
+  room2: {
     name: 'บ้านชมเดือน',
     price: '2,000฿ /คืน',
     total: '2',
@@ -18,14 +18,11 @@ const roomData = {
   },
 };
 
-const RoomDetails = () => {
-  const router = useRouter();
-  const { slug } = router.query;
-
-  const room = roomData[slug as keyof typeof roomData];
+export default function RoomDetails({ params }: { params: { slug: string } }) {
+  const room = roomData[params.slug as keyof typeof roomData];
 
   if (!room) {
-    return <p>Room not found!</p>;
+    notFound(); // Use Next.js 13's notFound function if room is not found
   }
 
   return (
@@ -38,6 +35,4 @@ const RoomDetails = () => {
       </div>
     </section>
   );
-};
-
-export default RoomDetails;
+}

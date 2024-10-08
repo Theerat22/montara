@@ -4,8 +4,8 @@ import ProfileCard from '@/app/components/Cards';
 
 export const Rooms = () => {
   const roomName = [
-    { name: 'บ้านธาราภิรมย์', total: "6", price: '4,500฿ /คืน', image: welcome1,slug: 'tara' },
-    { name: 'บ้านชมเดือน', total: "2", price: '2,000฿ /คืน', image: welcome1,slug: 'chomdao' },
+    { name: 'บ้านธาราภิรมย์', total: "6", price: '4,500฿ /คืน', image: welcome1,slug: 'room1' },
+    { name: 'บ้านชมเดือน', total: "2", price: '2,000฿ /คืน', image: welcome1,slug: 'room2' },
     ];
 
   return (
