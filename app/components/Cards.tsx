@@ -9,7 +9,7 @@ interface ProfileCardProps {
   }
 const ProfileCard: React.FC<ProfileCardProps> = ({ name, price, total, imageUrl,slug}) => {
     return (
-      <div className="min-w-sm bg-white rounded-lg shadow-xl p-6 text-center">
+      <div className="min-w-sm bg-white rounded-lg shadow-xl p-6 text-center hover:scale-105 transform transition duration-300 ease-in-out">
         {/* Profile Image */}
         <Image
           className="w-52 h-60 mx-auto rounded-lg"
