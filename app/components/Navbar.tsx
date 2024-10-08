@@ -20,9 +20,14 @@ const Navbar: React.FC = () => {
           <div className="flex items-center h-20 w-full">
             <div className="flex items-center mx-10 justify-between w-full">
               <div className="flex justify-center items-center flex-shrink-0">
-                <h1 className="font-bold text-black text-xl cursor-pointer text">
-                    ม่อนธารารีสอร์ท
-                </h1>
+              <Link href="/home" scroll={true}
+                      onClick={() => scrollToSection("/home")}
+                      className="cursor-pointer text-blue-600 font-semibold px-3 py-2 text-md hover:font-black"
+                    >
+                    <h1 className="font-bold text-black text-xl cursor-pointer text">
+                      ม่อนธารารีสอร์ท
+                    </h1>
+                  </Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
