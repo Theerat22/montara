@@ -24,7 +24,7 @@ export const Activities = () => {
 
         <div className="grid grid-cols-1 gap-4 pt-32 justify-center items-center lg:grid-cols-3">
             <motion.p 
-            className="text-black mb-8 text-center font-bold text-4xl"
+            className="text-blue-500 mb-8 text-center font-bold text-4xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay : 0.5, ease: easeOut}}

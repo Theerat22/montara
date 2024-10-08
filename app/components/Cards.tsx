@@ -17,6 +17,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ name, price, total, imageUrl,
           alt={name}
           width={500}
           height={500}
+          layout="responsive"
         />
 
         <h2 className="mt-4 text-xl font-semibold text-gray-800">{name}</h2>

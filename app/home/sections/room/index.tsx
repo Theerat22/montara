@@ -14,7 +14,7 @@ export const Rooms = () => {
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
                 รายการห้องพัก
             </h1>
-            <div className=" grid grid-cols-2 gap-4 pt-10 lg:grid-cols-3">
+            <div className=" grid grid-cols-1 gap-4 pt-10 lg:grid-cols-3">
                 {roomName.map((item, index) => (
                   <div key={index}>
                         <ProfileCard 
