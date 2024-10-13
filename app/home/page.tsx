@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <Navbar 
             home="#welcome"
             rooms="#rooms"
-            activity="#activity"
+            activity="#activities"
             services="#services"
             contact="#contact"
         />

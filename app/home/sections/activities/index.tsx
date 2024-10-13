@@ -7,7 +7,7 @@ import {easeOut, motion} from "framer-motion";
 export const Activities = () => {
   return (
     <>
-      <section id="activities" className="min-h-[1200px] pt-44 bg-gradient-to-b from-white to-gray-50 py-12 ">
+      <section id="activities" className="min-h-screen pt-44 bg-gradient-to-b from-white to-gray-50 py-12 ">
         <div className="container mx-auto px-4 text-center">
             <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -24,12 +24,12 @@ export const Activities = () => {
 
         <div className="grid grid-cols-1 gap-4 pt-32 justify-center items-center lg:grid-cols-3">
             <motion.p 
-            className="text-blue-500 mb-8 text-center font-bold text-4xl"
+            className="text-blue-500 mb-8 text-center font-bold text-4xl lg:text-left"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay : 0.5, ease: easeOut}}
             >
-            กิจกรรมรถ AV
+            กิจกรรมรถ ATV
             </motion.p>
 
             <motion.div 
