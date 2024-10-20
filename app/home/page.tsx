@@ -4,6 +4,7 @@ import Navbar from "@/app/components/Navbar";
 import {Welcome} from "./sections/welcome/index";
 import { Rooms } from "./sections/room/index";
 import { Activities } from "./sections/activities/index";
+import { Nearby } from "./sections/nearby/index";
 const Home: React.FC = () => {
 
     return (
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
             <Welcome />
             <Activities />
             <Rooms />
+            <Nearby />
         </main>
         </>
     );
