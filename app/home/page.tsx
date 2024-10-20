@@ -5,6 +5,7 @@ import {Welcome} from "./sections/welcome/index";
 import { Rooms } from "./sections/room/index";
 import { Activities } from "./sections/activities/index";
 import { Nearby } from "./sections/nearby/index";
+import Footer from "@/app/components/Footer";
 const Home: React.FC = () => {
 
     return (
@@ -21,7 +22,9 @@ const Home: React.FC = () => {
             <Activities />
             <Rooms />
             <Nearby />
+            
         </main>
+        <Footer />
         </>
     );
 };
