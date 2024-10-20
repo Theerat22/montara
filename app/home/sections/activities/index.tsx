@@ -7,7 +7,7 @@ import {easeOut, motion} from "framer-motion";
 export const Activities = () => {
   return (
     <>
-      <section id="activities" className="min-h-screen pt-44 bg-gradient-to-b from-white to-gray-50 py-12 ">
+      <section id="activities" className="min-h-screen pt-36 bg-gradient-to-b from-white to-gray-50 py-12 ">
         <div className="container mx-auto px-4 text-center">
             <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -20,16 +20,49 @@ export const Activities = () => {
             </motion.div>     
         </div>
 
-      <div className="container mx-auto px-4 mt-8 flex flex-col gap-4 ">
+      <div className="container mx-auto px-4 mt-5 flex flex-col gap-4 ">
 
         <div className="grid grid-cols-1 gap-4 pt-32 justify-center items-center lg:grid-cols-3">
             <motion.p 
-            className="text-blue-500 mb-8 text-center font-bold text-4xl lg:text-left"
+            className="text-blue-500 mb-8 text-center font-bold text-4xl"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay : 0.5, ease: easeOut}}
             >
             กิจกรรมรถ ATV
+            </motion.p>
+
+            <motion.div 
+          className="col-span-1"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay : 1, ease: easeOut}}
+          >
+            <Image src={atv1} alt="Travel" className="rounded-xl" />
+          </motion.div>
+          <motion.div 
+          className="col-span-1"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay : 1.25, ease: easeOut}}
+          >
+            <Image src={atv2} alt="Travel" className="rounded-xl" />
+          </motion.div>
+
+        </div>
+
+      </div>
+
+      <div className="container mx-auto px-4 mt-8 flex flex-col gap-4 ">
+
+        <div className="grid grid-cols-1 gap-4 pt-32 justify-center items-center lg:grid-cols-3">
+            <motion.p 
+            className="text-blue-500 mb-8 text-center font-bold text-4xl"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay : 0.5, ease: easeOut}}
+            >
+            ลำธารส่วนตัว
             </motion.p>
 
             <motion.div 
